@@ -1,0 +1,252 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+
+.navbar{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background-color:rgba(95, 69, 69, 0.5);
+    position:sticky;
+    top: 0;
+}
+.navbar ul{
+    display:flex;
+    list-style: none;
+    margin:20px 0px;
+}
+.navbar ul li{
+    font-family:century;
+    font-size: 1,1rem;
+    font-weight:bold;
+}
+.navbar ul li a{
+    text-decoration:none;
+    color:white;
+    padding:8px 24px;
+    transition:all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color:white;
+    color:black;
+    box-shadow:0 0 10PX white;
+}
+#home{
+    display:flex;
+    font-size:medium;
+    flex-direction:column;
+    box-sizing:border-box;
+    padding:20px 10px;
+    margin-bottom:30px;
+    background-color:rgb(12, 10, 10);
+    color: whitesmoke;
+    
+
+     }
+
+#home::before{
+    content:"";
+    position: absolute;
+    top:0;
+    right:0;
+    height: 500px;
+    width: 80%%;
+    z-index:-1;
+    opacity: .8;
+}
+.pic{
+    display: flex;
+    padding: 5px 50px; 
+    top:80%;
+    right: 20%;
+
+}
+ .main{
+    display:flex;
+    flex-direction:column;
+    align-items:first baseline;
+    position: absolute;
+    top:25%;
+    right:30%;
+    font-size:x-large;
+
+ }    
+ .headings{
+    font-family: century;
+    font-size:70px;
+    text-align:center;
+    margin:20px 0px;
+
+ }
+.btn{
+    padding: 5px 35px;
+    background-color: transparent;
+    border:1px solid white;
+    color:white;
+    outline:none;
+    transition:.6s ease;
+}
+.btn:hover{
+    cursor:pointer;
+    background-color:white;
+    color:rgb(231, 228, 228);
+    box-shadow:0 0 5px white,0 0 10px white,0 0 15px white;
+    font-weight: bold;
+}
+.socials {
+  display: flex;
+  flex-direction:column;
+  position: fixed;
+  right: 3%;
+  bottom: 30%;
+}
+
+.socicon {
+  width: 3rem;
+  height: 3rem;
+}
+.btn{
+    padding: 5px;
+    background-color: transparent;
+    border:1px solid rgb(3, 3, 3);
+    color:rgb(255, 254, 254);
+    outline:none;
+    transition:.6s ease;
+}
+.btn:hover{
+    cursor:pointer;
+    background-color:rgb(10, 10, 10);
+    color:rgb(241, 239, 239);
+    box-shadow:0 0 5px white,0 0 10px white,0 0 15px white;
+    font-weight: bold;
+}
+#about{
+    display:flex;
+    font-size:large;
+    flex-direction:column;
+    box-sizing:content-box;
+    padding:20px;
+    margin-bottom:5px;
+    background-color:rgb(189, 186, 186);
+    
+    
+}
+
+
+#pic{
+    display:flex;
+    color: #0f0f0f;
+}
+#pic img{
+    width: 430px;
+    height:500px;
+}
+#intro{
+    display:flex;
+    flex-direction:column;
+    text-align: justify;
+    padding: 10px;
+    font-size:larger;
+    font-style: italic;
+    margin-bottom: 30px;
+    color: #080808;
+}
+#intro h2{
+    font-size:2rem;
+    margin-bottom: 20px;
+}
+#hero{
+    font-family: century;
+    font-size:6rem;
+    text-align:center;
+    margin:40px 0px;
+
+}
+#btn{
+    text-align: right;
+    padding: 5px 10px;
+    background-color: transparent;
+    border:1px solid rgb(10, 10, 10);
+    color:rgb(10, 10, 10);
+    outline:black;
+    transition:.6s ease;
+    margin:30px 20px;
+    font-style: unset;
+
+}
+.btn:hover{
+    cursor:pointer;
+    background-color:rgb(7, 7, 7);
+    color:rgb(17, 17, 17);
+    box-shadow:0 0 5px rgb(7, 7, 7),0 0 10px rgb(7, 7, 7),0 0 15px rgb(3, 3, 3);
+    font-weight: bold;
+}
+#skills{
+    background-color: #462c2c;
+    color: whitesmoke;
+    height: 670px;
+    padding:20px;
+    text-align: center;
+    font-size: large;
+}
+.icon-card {
+    background-color: #f1efef;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+    padding: 20px;
+    margin: 10px;
+  }
+  .projects {
+    background-color: var(--bg-color);
+    padding: 32px 0;
+    margin-top: 2rem;
+  }
+  
+  .project-pic {
+    width: 65%;
+    height: 50%;
+  }
+  .projects-title {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .project-container {
+    text-align: center;
+    width: 21.875rem;
+    padding: 2rem;
+  }
+
+  
+  .projects-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .project-container p {
+    padding: 0.4rem;
+  }
+  
+  .project-title {
+    margin-bottom: var(--bottom-margin);
+  }
+  
+  .project-details {
+    margin-bottom: var(--bottom-margin);
+    color: #1a1717;
+  }
+  
+  .project-card {
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--primary-shadow);
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  
